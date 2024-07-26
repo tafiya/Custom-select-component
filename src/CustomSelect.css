@@ -1,38 +1,50 @@
 /* CustomSelect.css */
 
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_container {
+  border: 2px solid blue;
+  padding: 20px;
+}
 .select-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .select__control {
-    border-color: #ccc;
-    border-radius: 4px;
-    box-shadow: none;
-  }
-  
-  .select__control:hover {
-    border-color: #888;
-  }
-  
-  .select__menu {
-    z-index: 9999;
-  }
-  
-  .select__option {
-    background-color: #fff;
-  }
-  
-  .select__option:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .select__option--is-selected {
-    background-color: #f1f1f1;
-  }
-  
-  .select__group-heading {
-    font-weight: bold;
-  }
-  
+  width: 100%;
+  max-width: 400px;
+
+  margin: 0 auto;
+}
+
+.select__control {
+  border-color: #ccc;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.select__control:hover {
+  border-color: #888;
+}
+
+.select__menu {
+  z-index: 9999;
+}
+
+.select__option {
+  background-color: #fff;
+}
+
+.select__option:hover {
+  background-color: #f0f0f0;
+}
+
+.select__option--is-selected {
+  background-color: #f1f1f1;
+}
+
+.select__group-heading {
+  font-weight: bold;
+}

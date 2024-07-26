@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import CustomSelect from './CustomSelect';
 import './CustomSelect.css';
 
@@ -24,22 +24,26 @@ const App = () => {
   };
 
   return (
-    <div style={{ margin: '20px' }}>
-      <h1>Custom Select Component</h1>
-      <CustomSelect
-        isClearable={true}
-        isSearchable={true}
-        isDisabled={false}
-        options={options}
-        value={selectedValue}
-        placeholder="Select an option..."
-        isGrouped={false}
-        isMulti={true}
-        onChangeHandler={handleChange}
-        onMenuOpen={handleMenuOpen}
-        onSearchHandler={handleSearch}
-      />
+    <div className='main'>
+      <div className='main_container'>
+        <h1>Custom Select Component</h1>
+        <CustomSelect
+          isClearable={true}
+          isSearchable={true}
+          isDisabled={false}
+          options={options}
+          value={selectedValue}
+          placeholder="Select an option..."
+          isGrouped={false}
+          isMulti={true}
+          onChangeHandler={handleChange}
+          onMenuOpen={handleMenuOpen}
+          onSearchHandler={handleSearch}
+        />
+      </div>
+
     </div>
+
   );
 };
 
